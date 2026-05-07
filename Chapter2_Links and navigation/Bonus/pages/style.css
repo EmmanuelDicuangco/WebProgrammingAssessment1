@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9 0%, #a5d6a7 100%);
+    color: #1b5e20;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #1b5e20, #0d3b0f);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #ffd54f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.1);
+}
+
+nav a:hover {
+    background: #ffd54f;
+    color: #1b5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.box {
+    background: white;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffd54f;
+    display: inline-block;
+}
+
+p {
+    line-height: 1.8;
+    margin: 15px 0;
+    font-size: 1.05rem;
+    color: #2c3e2b;
+}
+
+.box p strong {
+    color: #1b5e20;
+    font-size: 1.1rem;
+}
+
+.box p {
+    background: #f1f8e9;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #ffd54f;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav a {
+        padding: 5px 12px;
+        font-size: 0.85rem;
+    }
+    
+    .box {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+a:not(nav a) {
+    color: #43a047;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:not(nav a):hover {
+    color: #ffd54f;
+    text-decoration: underline;
+}

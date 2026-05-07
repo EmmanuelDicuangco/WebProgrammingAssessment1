@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    color: #1b5e20;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(135deg, #1b5e20, #0d3b0f);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: #ffd54f;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #ffd54f;
+    color: #1b5e20;
+    text-decoration: none;
+}
+
+.box {
+    background: white;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #ffd54f;
+    display: inline-block;
+}
+
+p {
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.char-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.char-list p {
+    background: #f1f8e9;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.review {
+    background: #fff8e1;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border-left: 4px solid #ffd54f;
+}
+
+.review strong {
+    color: #e65100;
+}
+
+.btn {
+    display: inline-block;
+    background: #43a047;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #2e7d32;
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .box {
+        margin: 15px;
+        padding: 18px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    nav a {
+        margin: 0 6px;
+        font-size: 0.9rem;
+    }
+    
+    .char-list {
+        grid-template-columns: 1fr;
+    }
+}
